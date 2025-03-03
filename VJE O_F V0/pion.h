@@ -12,6 +12,8 @@ class pion
 		int GetPositionDeBaseX();
 		int GetPositionDeBaseY();
 
+		char GetEquipe();
+
 		int SetPositionX(int SetPositionX);//fonction pour le rock
 		int deplacement(int CaseY, int CaseX);//deplacement
 

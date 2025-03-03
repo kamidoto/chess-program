@@ -17,14 +17,15 @@ pion::pion(int positionDeBaseX, int positionDeBaseY, char team, char type)
 
 int pion::GetPositionX()
 {
-	std::cout << "positionX: " << positionX << "\n";
+	//std::cout << "positionX: " << positionX << "\n";
 
 	return positionX;
 }
 
 int pion::GetPositionY()
 {
-	std::cout << "positionY: " << positionY << "\n";
+
+	//std::cout << "positionY: " << positionY << "\n";
 
 	return positionY;
 }
@@ -37,6 +38,11 @@ int pion::GetPositionDeBaseX()
 int pion::GetPositionDeBaseY()
 {
 	return PpositionDeBaseY;
+}
+
+char pion::GetEquipe()
+{
+	return equipe;
 }
 
 int pion::SetPositionX(int SetPositionX)
