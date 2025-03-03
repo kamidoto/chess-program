@@ -1,0 +1,4 @@
+﻿  main.cpp
+  pion.cpp
+main.obj : error LNK2001: symbole externe non résolu "public: __cdecl pion::~pion(void)" (??1pion@@QEAA@XZ)
+C:\Users\jerome\Desktop\VJE O_F V0\x64\Release\VJE O_F V0.exe : fatal error LNK1120: 1 externes non résolus
