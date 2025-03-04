@@ -45,6 +45,11 @@ char pion::GetEquipe()
 	return equipe;
 }
 
+char pion::GetType()
+{
+	return Ptype;
+}
+
 int pion::SetPositionX(int SetPositionX)
 {
 	positionX = SetPositionX;
