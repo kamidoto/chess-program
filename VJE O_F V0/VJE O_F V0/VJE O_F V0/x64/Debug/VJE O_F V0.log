@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\jerome\Desktop\VJE O_F V0\main.cpp(88,6): warning C4101: 'rock' : variable locale non référencée
+  VJE O_F V0.vcxproj -> C:\Users\jerome\Desktop\VJE O_F V0\x64\Debug\VJE O_F V0.exe
