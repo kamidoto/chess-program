@@ -960,9 +960,825 @@ int main()
 								TWG.deplacement(DIcolone, Dtraverse);
 						}
 					}
+				} 
+				
+				else if (TWD.GetPositionX() == Icolone and TWD.GetPositionY() == traverse) //tour blanche de droite
+				{
+					std::cout << "choisit une colone de destination\n";
+					std::cin >> DCcolone;
+
+					switch (DCcolone)
+
+					{
+					case 'a':
+						DIcolone = 1;
+						break;
+
+					case 'b':
+						DIcolone = 2;
+						break;
+
+					case 'c':
+						DIcolone = 3;
+						break;
+
+					case 'd':
+						DIcolone = 4;
+						break;
+
+					case 'e':
+						DIcolone = 5;
+						break;
+
+					case 'f':
+						DIcolone = 6;
+						break;
+
+					case 'g':
+						DIcolone = 7;
+						break;
+
+					case 'h':
+						DIcolone = 8;
+						break;
+					}
+
+					std::cout << "choisit une traverse de destination\n";
+					std::cin >> Dtraverse;
+
+					if (TWD.GetPositionX() != DIcolone) //deplacement sur l axe x
+					{
+
+						for (int i = TWD.GetPositionX() + 1; i < DIcolone; i++) //collision \ attak \ déplacement sur l axe x 
+						{
+
+							if (FWG.GetPositionX() == i)
+							{
+								if (FWG.GetPositionY() <= Dtraverse)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (CWD.GetPositionX() == i)
+							{
+								if (CWD.GetPositionY() <= Dtraverse)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (FWD.GetPositionX() == i)
+							{
+								if (FWD.GetPositionY() <= Dtraverse)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (CWG.GetPositionX() == i)
+							{
+								if (CWG.GetPositionY() <= Dtraverse)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (RW.GetPositionX() == i)
+							{
+								if (RW.GetPositionY() <= Dtraverse)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (KW.GetPositionX() == i)
+							{
+								if (KW.GetPositionY() <= Dtraverse)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (TWG.GetPositionX() == i)
+							{
+								if (TWG.GetPositionY() <= Dtraverse)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (PWa.GetPositionX() == i)
+							{
+								if (PWa.GetPositionY() <= Dtraverse)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (PWb.GetPositionX() == i)
+							{
+								if (PWb.GetPositionY() <= Dtraverse)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (PWc.GetPositionX() == i)
+							{
+								if (PWc.GetPositionY() <= Dtraverse)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (PWd.GetPositionX() == i)
+							{
+								if (PWd.GetPositionY() <= Dtraverse)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (PWe.GetPositionX() == i)
+							{
+								if (PWe.GetPositionY() <= Dtraverse)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (PWf.GetPositionX() == i)
+							{
+								if (PWf.GetPositionY() <= Dtraverse)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (PWg.GetPositionX() == i)
+							{
+								if (PWg.GetPositionY() <= Dtraverse)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (PWh.GetPositionX() == i)
+							{
+								if (PWh.GetPositionY() <= Dtraverse)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (TBG.GetPositionX() == i)
+							{
+								if (TBG.GetPositionY() < Dtraverse)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (TBG.GetPositionX() == i)
+							{
+								if (TBG.GetPositionY() == Dtraverse)
+								{
+									TBG.~pion();
+								}
+							}
+
+							else if (CBG.GetPositionX() == i)
+							{
+								if (CBG.GetPositionY() < Dtraverse)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (CBG.GetPositionX() == i)
+							{
+								if (CBG.GetPositionY() == Dtraverse)
+								{
+									CBG.~pion();
+								}
+							}
+
+							else if (FBG.GetPositionX() == i)
+							{
+								if (FBG.GetPositionY() < Dtraverse)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (FBG.GetPositionX() == i)
+							{
+								if (FBG.GetPositionY() == Dtraverse)
+								{
+									FBG.~pion();
+								}
+							}
+
+							else if (RB.GetPositionX() == i)
+							{
+								if (RB.GetPositionY() < Dtraverse)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (RB.GetPositionX() == i)
+							{
+								if (RB.GetPositionY() == Dtraverse)
+								{
+									RB.~pion();
+								}
+							}
+
+							else if (KB.GetPositionX() == i)
+							{
+								if (KB.GetPositionY() < Dtraverse)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (KB.GetPositionX() == i)
+							{
+								if (KB.GetPositionY() == Dtraverse)
+								{
+									KB.~pion();
+								}
+							}
+
+							else if (FBD.GetPositionX() == i)
+							{
+								if (FBD.GetPositionY() < Dtraverse)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (FBD.GetPositionX() == i)
+							{
+								if (FBD.GetPositionY() == Dtraverse)
+								{
+									FBD.~pion();
+								}
+							}
+
+							else if (CBD.GetPositionX() == i)
+							{
+								if (TBG.GetPositionY() < Dtraverse)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (CBD.GetPositionX() == i)
+							{
+								if (CBD.GetPositionY() == Dtraverse)
+								{
+									CBD.~pion();
+								}
+							}
+
+							else if (TBD.GetPositionX() == i)
+							{
+								if (TBD.GetPositionY() < Dtraverse)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (TBD.GetPositionX() == i)
+							{
+								if (TBD.GetPositionY() == Dtraverse)
+								{
+									TBD.~pion();
+								}
+							}
+
+							else if (PBa.GetPositionX() == i)
+							{
+								if (PBa.GetPositionY() < Dtraverse)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (PBa.GetPositionX() == i)
+							{
+								if (PBa.GetPositionY() == Dtraverse)
+								{
+									PBa.~pion();
+								}
+							}
+
+							else if (PBb.GetPositionX() == i)
+							{
+								if (PBb.GetPositionY() < Dtraverse)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (PBb.GetPositionX() == i)
+							{
+								if (PBb.GetPositionY() == Dtraverse)
+								{
+									PBb.~pion();
+								}
+							}
+
+							else if (PBc.GetPositionX() == i)
+							{
+								if (PBc.GetPositionY() < Dtraverse)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (PBc.GetPositionX() == i)
+							{
+								if (PBc.GetPositionY() == Dtraverse)
+								{
+									PBc.~pion();
+								}
+							}
+
+							else if (PBd.GetPositionX() == i)
+							{
+								if (PBd.GetPositionY() < Dtraverse)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (PBd.GetPositionX() == i)
+							{
+								if (PBd.GetPositionY() == Dtraverse)
+								{
+									PBd.~pion();
+								}
+							}
+
+							else if (PBe.GetPositionX() == i)
+							{
+								if (PBe.GetPositionY() < Dtraverse)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (PBe.GetPositionX() == i)
+							{
+								if (PBe.GetPositionY() == Dtraverse)
+								{
+									PBe.~pion();
+								}
+							}
+
+							else if (PBf.GetPositionX() == i)
+							{
+								if (PBf.GetPositionY() < Dtraverse)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (PBf.GetPositionX() == i)
+							{
+								if (PBf.GetPositionY() == Dtraverse)
+								{
+									PBf.~pion();
+								}
+							}
+
+							else if (PBg.GetPositionX() == i)
+							{
+								if (PBg.GetPositionY() < Dtraverse)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (PBg.GetPositionX() == i)
+							{
+								if (PBg.GetPositionY() == Dtraverse)
+								{
+									PBg.~pion();
+								}
+							}
+
+							else if (PBh.GetPositionX() == i)
+							{
+								if (PBh.GetPositionY() < Dtraverse)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (PBh.GetPositionX() == i)
+							{
+								if (PBh.GetPositionY() == Dtraverse)
+								{
+									PBh.~pion();
+								}
+							}
+
+							else
+								TWD.deplacement(DIcolone, Dtraverse);
+						}
+					}
+
+					if (TWD.GetPositionY() != Dtraverse) //deplacement sur l axe y
+					{
+						for (int i = TWD.GetPositionY() + 1; i < Dtraverse; i++) //collision \ attak \ déplacement sur l axe y
+						{
+
+							if (FWG.GetPositionY() == i)
+							{
+								if (FWG.GetPositionX() <= DIcolone)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (CWD.GetPositionY() == i)
+							{
+								if (CWD.GetPositionX() <= DIcolone)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (FWD.GetPositionY() == i)
+							{
+								if (FWD.GetPositionX() <= DIcolone)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (CWG.GetPositionY() == i)
+							{
+								if (CWG.GetPositionX() <= DIcolone)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (RW.GetPositionY() == i)
+							{
+								if (RW.GetPositionX() <= DIcolone)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (KW.GetPositionY() == i)
+							{
+								if (KW.GetPositionX() <= DIcolone)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (TWG.GetPositionY() == i)
+							{
+								if (TWG.GetPositionX() <= DIcolone)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (PWa.GetPositionY() == i)
+							{
+								if (PWa.GetPositionX() <= DIcolone)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (PWb.GetPositionY() == i)
+							{
+								if (PWb.GetPositionX() <= DIcolone)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (PWc.GetPositionY() == i)
+							{
+								if (PWc.GetPositionX() <= DIcolone)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (PWd.GetPositionY() == i)
+							{
+								if (PWd.GetPositionX() <= DIcolone)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (PWe.GetPositionY() == i)
+							{
+								if (PWe.GetPositionX() <= DIcolone)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (PWf.GetPositionY() == i)
+							{
+								if (PWf.GetPositionX() <= DIcolone)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (PWg.GetPositionY() == i)
+							{
+								if (PWg.GetPositionX() <= DIcolone)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (PWh.GetPositionY() == i)
+							{
+								if (PWh.GetPositionX() <= DIcolone)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (TBG.GetPositionY() == i)
+							{
+								if (TBG.GetPositionX() < DIcolone)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (TBG.GetPositionY() == i)
+							{
+								if (TBG.GetPositionX() == DIcolone)
+								{
+									TBG.~pion();
+								}
+							}
+
+							else if (CBG.GetPositionY() == i)
+							{
+								if (CBG.GetPositionX() < DIcolone)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (CBG.GetPositionY() == i)
+							{
+								if (CBG.GetPositionX() == DIcolone)
+								{
+									CBG.~pion();
+								}
+							}
+
+							else if (FBG.GetPositionY() == i)
+							{
+								if (FBG.GetPositionX() < DIcolone)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (FBG.GetPositionY() == i)
+							{
+								if (FBG.GetPositionX() == DIcolone)
+								{
+									FBG.~pion();
+								}
+							}
+
+							else if (RB.GetPositionY() == i)
+							{
+								if (RB.GetPositionX() < DIcolone)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (RB.GetPositionY() == i)
+							{
+								if (RB.GetPositionX() == DIcolone)
+								{
+									RB.~pion();
+								}
+							}
+
+							else if (KB.GetPositionY() == i)
+							{
+								if (KB.GetPositionX() < DIcolone)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (KB.GetPositionY() == i)
+							{
+								if (KB.GetPositionX() == DIcolone)
+								{
+									KB.~pion();
+								}
+							}
+
+							else if (FBD.GetPositionY() == i)
+							{
+								if (FBD.GetPositionX() < DIcolone)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (FBD.GetPositionY() == i)
+							{
+								if (FBD.GetPositionX() == DIcolone)
+								{
+									FBD.~pion();
+								}
+							}
+
+							else if (CBD.GetPositionY() == i)
+							{
+								if (TBG.GetPositionX() < DIcolone)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (CBD.GetPositionY() == i)
+							{
+								if (CBD.GetPositionX() == DIcolone)
+								{
+									CBD.~pion();
+								}
+							}
+
+							else if (TBD.GetPositionY() == i)
+							{
+								if (TBD.GetPositionX() < DIcolone)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (TBD.GetPositionY() == i)
+							{
+								if (TBD.GetPositionX() == DIcolone)
+								{
+									TBD.~pion();
+								}
+							}
+
+							else if (PBa.GetPositionY() == i)
+							{
+								if (PBa.GetPositionX() < DIcolone)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (PBa.GetPositionY() == i)
+							{
+								if (PBa.GetPositionX() == DIcolone)
+								{
+									PBa.~pion();
+								}
+							}
+
+							else if (PBb.GetPositionY() == i)
+							{
+								if (PBb.GetPositionX() < DIcolone)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (PBb.GetPositionY() == i)
+							{
+								if (PBb.GetPositionX() == DIcolone)
+								{
+									PBb.~pion();
+								}
+							}
+
+							else if (PBc.GetPositionY() == i)
+							{
+								if (PBc.GetPositionX() < DIcolone)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (PBc.GetPositionY() == i)
+							{
+								if (PBc.GetPositionX() == DIcolone)
+								{
+									PBc.~pion();
+								}
+							}
+
+							else if (PBd.GetPositionY() == i)
+							{
+								if (PBd.GetPositionX() < DIcolone)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (PBd.GetPositionY() == i)
+							{
+								if (PBd.GetPositionX() == DIcolone)
+								{
+									PBd.~pion();
+								}
+							}
+
+							else if (PBe.GetPositionY() == i)
+							{
+								if (PBe.GetPositionX() < DIcolone)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (PBe.GetPositionY() == i)
+							{
+								if (PBe.GetPositionX() == DIcolone)
+								{
+									PBe.~pion();
+								}
+							}
+
+							else if (PBf.GetPositionY() == i)
+							{
+								if (PBf.GetPositionX() < DIcolone)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (PBf.GetPositionY() == i)
+							{
+								if (PBf.GetPositionX() == DIcolone)
+								{
+									PBf.~pion();
+								}
+							}
+
+							else if (PBg.GetPositionY() == i)
+							{
+								if (PBg.GetPositionX() < DIcolone)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (PBg.GetPositionY() == i)
+							{
+								if (PBg.GetPositionX() == DIcolone)
+								{
+									PBg.~pion();
+								}
+							}
+
+							else if (PBh.GetPositionY() == i)
+							{
+								if (PBh.GetPositionX() < DIcolone)
+								{
+									std::cout << "il y a une piece a cette endroit\n";
+								}
+							}
+
+							else if (PBh.GetPositionY() == i)
+							{
+								if (PBh.GetPositionX() == DIcolone)
+								{
+									PBh.~pion();
+								}
+							}
+
+							else
+								TWD.deplacement(DIcolone, Dtraverse);
+						}
 					}
 				}
-				
 
 				else
 					std::cout << "'il n y a pas cette piece a cet endroit\n";
@@ -1234,4 +2050,5 @@ int main()
 			}
 
 		}
+	}
 	}
