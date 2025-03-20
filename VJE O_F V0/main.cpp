@@ -2256,8 +2256,262 @@ int main()
 
 				else if (CWD.GetPositionX() == Icolone and CWD.GetPositionY() == traverse)
 				{
-					std::cout << "cavalier d\n";
-				}
+					std::cout << "choisit une colone de destination\n";
+					std::cin >> DCcolone;
+
+					switch (DCcolone)
+
+					{
+					case 'a':
+						DIcolone = 1;
+						break;
+
+					case 'b':
+						DIcolone = 2;
+						break;
+
+					case 'c':
+						DIcolone = 3;
+						break;
+
+					case 'd':
+						DIcolone = 4;
+						break;
+
+					case 'e':
+						DIcolone = 5;
+						break;
+
+					case 'f':
+						DIcolone = 6;
+						break;
+
+					case 'g':
+						DIcolone = 7;
+						break;
+
+					case 'h':
+						DIcolone = 8;
+						break;
+					}
+
+					std::cout << "choisit une traverse de destination\n";
+					std::cin >> Dtraverse;
+
+#pragma region pionBlanc
+					if (TWG.GetPositionX() == DIcolone and TWG.GetPositionY() == Dtraverse)
+					{
+						std::cout << "il y a une piece a cette endroit\n";
+					}
+
+					else if (FWG.GetPositionX() == DIcolone and FWG.GetPositionY() == Dtraverse)
+					{
+						std::cout << "il y a une piece a cette endroit\n";
+					}
+
+					else if (RW.GetPositionX() == DIcolone and RW.GetPositionY() == Dtraverse)
+					{
+						std::cout << "il y a une piece a cette endroit\n";
+					}
+
+					else if (KW.GetPositionX() == DIcolone and KW.GetPositionY() == Dtraverse)
+					{
+						std::cout << "il y a une piece a cette endroit\n";
+					}
+
+					else if (FWD.GetPositionX() == DIcolone and FWD.GetPositionY() == Dtraverse)
+					{
+						std::cout << "il y a une piece a cette endroit\n";
+					}
+
+					else if (CWG.GetPositionX() == DIcolone and CWG.GetPositionY() == Dtraverse)
+					{
+						std::cout << "il y a une piece a cette endroit\n";
+					}
+
+					else if (TWD.GetPositionX() == DIcolone and TWD.GetPositionY() == Dtraverse)
+					{
+						std::cout << "il y a une piece a cet endroit\n";
+					}
+
+					else if (PWa.GetPositionX() == DIcolone and PWa.GetPositionY() == Dtraverse)
+					{
+						std::cout << "il y a une piece a cet endropit\n";
+					}
+
+					else if (PWb.GetPositionX() == DIcolone and PWb.GetPositionY() == Dtraverse)
+					{
+						std::cout << "il y a une piece a cet endropit\n";
+					}
+
+
+					else if (PWc.GetPositionX() == DIcolone and PWc.GetPositionY() == Dtraverse)
+					{
+						std::cout << "il y a une piece a cet endropit\n";
+					}
+
+					else if (PWd.GetPositionX() == DIcolone and PWd.GetPositionY() == Dtraverse)
+					{
+						std::cout << "il y a une piece a cet endropit\n";
+					}
+
+					else if (PWe.GetPositionX() == DIcolone and PWe.GetPositionY() == Dtraverse)
+					{
+						std::cout << "il y a une piece a cet endropit\n";
+					}
+
+					else if (PWf.GetPositionX() == DIcolone and PWf.GetPositionY() == Dtraverse)
+					{
+						std::cout << "il y a une piece a cet endropit\n";
+					}
+
+					else if (PWg.GetPositionX() == DIcolone and PWg.GetPositionY() == Dtraverse)
+					{
+						std::cout << "il y a une piece a cet endropit\n";
+					}
+
+					else if (PWh.GetPositionX() == DIcolone and PWh.GetPositionY() == Dtraverse)
+					{
+						std::cout << "il y a une piece a cet endropit\n";
+					}
+#pragma endregion
+
+#pragma region pionNoir
+					if (TBG.GetPositionX() == DIcolone and TBG.GetPositionY() == Dtraverse)
+					{
+						TBG.~pion();
+						CWD.deplacement(Dtraverse, DIcolone);
+						white = false;
+						black = true;
+					}
+					else if (CBG.GetPositionX() == DIcolone and CBG.GetPositionY() == Dtraverse)
+					{
+						CBG.~pion();
+						CWD.deplacement(Dtraverse, DIcolone);
+						white = false;
+						black = true;
+					}
+					else if (FBG.GetPositionX() == DIcolone and FBG.GetPositionY() == Dtraverse)
+					{
+						FBG.~pion();
+						CWD.deplacement(Dtraverse, DIcolone);
+						white = false;
+						black = true;
+					}
+
+					else if (RB.GetPositionX() == DIcolone and RB.GetPositionY() == Dtraverse)
+					{
+						RB.~pion();
+						CWD.deplacement(Dtraverse, DIcolone);
+						white = false;
+						black = true;
+					}
+
+					else if (KB.GetPositionX() == DIcolone and KB.GetPositionY() == Dtraverse)
+					{
+						KB.~pion();
+						CWD.deplacement(Dtraverse, DIcolone);
+						white = false;
+						black = true;
+					}
+
+					else if (FBD.GetPositionX() == DIcolone and FBD.GetPositionY() == Dtraverse)
+					{
+						FBD.~pion();
+						CWD.deplacement(Dtraverse, DIcolone);
+						white = false;
+						black = true;
+					}
+
+					else if (CBD.GetPositionX() == DIcolone and CBD.GetPositionY() == Dtraverse)
+					{
+						CBD.~pion();
+						CWD.deplacement(Dtraverse, DIcolone);
+						white = false;
+						black = true;
+					}
+
+					else if (TBD.GetPositionX() == DIcolone and TBD.GetPositionY() == Dtraverse)
+					{
+						TBD.~pion();
+						CWD.deplacement(Dtraverse, DIcolone);
+						white = false;
+						black = true;
+					}
+
+					else if (PBa.GetPositionX() == DIcolone and PBa.GetPositionY() == Dtraverse)
+					{
+						PBa.~pion();
+						CWD.deplacement(Dtraverse, DIcolone);
+						white = false;
+						black = true;
+					}
+
+					else if (PBb.GetPositionX() == DIcolone and PBb.GetPositionY() == Dtraverse)
+					{
+						PBb.~pion();
+						CWD.deplacement(Dtraverse, DIcolone);
+						white = false;
+						black = true;
+					}
+
+					else if (PBc.GetPositionX() == DIcolone and PBc.GetPositionY() == Dtraverse)
+					{
+						PBc.~pion();
+						CWD.deplacement(Dtraverse, DIcolone);
+						white = false;
+						black = true;
+					}
+
+					else if (PBd.GetPositionX() == DIcolone and PBd.GetPositionY() == Dtraverse)
+					{
+						PBd.~pion();
+						CWD.deplacement(Dtraverse, DIcolone);
+						white = false;
+						black = true;
+					}
+
+					else if (PBe.GetPositionX() == DIcolone and PBe.GetPositionY() == Dtraverse)
+					{
+						PBe.~pion();
+						CWD.deplacement(Dtraverse, DIcolone);
+						white = false;
+						black = true;
+					}
+
+					else if (PBf.GetPositionX() == DIcolone and PBf.GetPositionY() == Dtraverse)
+					{
+						PBf.~pion();
+						CWD.deplacement(Dtraverse, DIcolone);
+						white = false;
+						black = true;
+					}
+
+					else if (PBg.GetPositionX() == DIcolone and PBg.GetPositionY() == Dtraverse)
+					{
+						PBg.~pion();
+						CWD.deplacement(Dtraverse, DIcolone);
+						white = false;
+						black = true;
+					}
+
+					else if (PBh.GetPositionX() == DIcolone and PBh.GetPositionY() == Dtraverse)
+					{
+						PBh.~pion();
+						CWD.deplacement(Dtraverse, DIcolone);
+						white = false;
+						black = true;
+					}
+#pragma endregion
+
+					else
+					{
+						CWD.deplacement(Dtraverse, DIcolone);
+						white = false;
+						black = true;
+					}
+					}
+			}
 
 				else
 					std::cout << "'il n y a pas cette piece a cet endroit\n";
