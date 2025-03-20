@@ -327,6 +327,7 @@ int main()
 								if (TBG.GetPositionY() == Dtraverse)
 								{
 									TBG.~pion();
+									TWG.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -343,6 +344,7 @@ int main()
 								if (CBG.GetPositionY() == Dtraverse)
 								{
 									CBG.~pion();
+									TWG.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -359,6 +361,7 @@ int main()
 								if (FBG.GetPositionY() == Dtraverse)
 								{
 									FBG.~pion();
+									TWG.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -375,6 +378,7 @@ int main()
 								if (RB.GetPositionY() == Dtraverse)
 								{
 									RB.~pion();
+									TWG.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -391,6 +395,7 @@ int main()
 								if (KB.GetPositionY() == Dtraverse)
 								{
 									KB.~pion();
+									TWG.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -407,6 +412,7 @@ int main()
 								if (FBD.GetPositionY() == Dtraverse)
 								{
 									FBD.~pion();
+									TWG.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -423,6 +429,7 @@ int main()
 								if (CBD.GetPositionY() == Dtraverse)
 								{
 									CBD.~pion();
+									TWG.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -439,6 +446,7 @@ int main()
 								if (TBD.GetPositionY() == Dtraverse)
 								{
 									TBD.~pion();
+									TWG.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -455,6 +463,7 @@ int main()
 								if (PBa.GetPositionY() == Dtraverse)
 								{
 									PBa.~pion();
+									TWG.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -471,6 +480,7 @@ int main()
 								if (PBb.GetPositionY() == Dtraverse)
 								{
 									PBb.~pion();
+									TWG.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -487,6 +497,7 @@ int main()
 								if (PBc.GetPositionY() == Dtraverse)
 								{
 									PBc.~pion();
+									TWG.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -503,6 +514,7 @@ int main()
 								if (PBd.GetPositionY() == Dtraverse)
 								{
 									PBd.~pion();
+									TWG.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -519,6 +531,7 @@ int main()
 								if (PBe.GetPositionY() == Dtraverse)
 								{
 									PBe.~pion();
+									TWG.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -535,6 +548,7 @@ int main()
 								if (PBf.GetPositionY() == Dtraverse)
 								{
 									PBf.~pion();
+									TWG.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -551,6 +565,7 @@ int main()
 								if (PBg.GetPositionY() == Dtraverse)
 								{
 									PBg.~pion();
+									TWG.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -567,6 +582,7 @@ int main()
 								if (PBh.GetPositionY() == Dtraverse)
 								{
 									PBh.~pion();
+									TWG.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -713,6 +729,7 @@ int main()
 								if (TBG.GetPositionX() == DIcolone)
 								{
 									TBG.~pion();
+									TWG.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -729,6 +746,7 @@ int main()
 								if (CBG.GetPositionX() == DIcolone)
 								{
 									CBG.~pion();
+									TWG.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -745,6 +763,7 @@ int main()
 								if (FBG.GetPositionX() == DIcolone)
 								{
 									FBG.~pion();
+									TWG.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -761,6 +780,7 @@ int main()
 								if (RB.GetPositionX() == DIcolone)
 								{
 									RB.~pion();
+									TWG.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -777,6 +797,7 @@ int main()
 								if (KB.GetPositionX() == DIcolone)
 								{
 									KB.~pion();
+									TWG.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -793,6 +814,7 @@ int main()
 								if (FBD.GetPositionX() == DIcolone)
 								{
 									FBD.~pion();
+									TWG.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -809,6 +831,7 @@ int main()
 								if (CBD.GetPositionX() == DIcolone)
 								{
 									CBD.~pion();
+									TWG.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -825,6 +848,7 @@ int main()
 								if (TBD.GetPositionX() == DIcolone)
 								{
 									TBD.~pion();
+									TWG.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -841,6 +865,7 @@ int main()
 								if (PBa.GetPositionX() == DIcolone)
 								{
 									PBa.~pion();
+									TWG.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -857,6 +882,7 @@ int main()
 								if (PBb.GetPositionX() == DIcolone)
 								{
 									PBb.~pion();
+									TWG.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -873,6 +899,7 @@ int main()
 								if (PBc.GetPositionX() == DIcolone)
 								{
 									PBc.~pion();
+									TWG.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -889,6 +916,7 @@ int main()
 								if (PBd.GetPositionX() == DIcolone)
 								{
 									PBd.~pion();
+									TWG.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -905,6 +933,7 @@ int main()
 								if (PBe.GetPositionX() == DIcolone)
 								{
 									PBe.~pion();
+									TWG.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -921,6 +950,7 @@ int main()
 								if (PBf.GetPositionX() == DIcolone)
 								{
 									PBf.~pion();
+									TWG.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -937,6 +967,7 @@ int main()
 								if (PBg.GetPositionX() == DIcolone)
 								{
 									PBg.~pion();
+									TWG.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -953,6 +984,7 @@ int main()
 								if (PBh.GetPositionX() == DIcolone)
 								{
 									PBh.~pion();
+									TWG.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -1145,6 +1177,7 @@ int main()
 								if (TBG.GetPositionY() == Dtraverse)
 								{
 									TBG.~pion();
+									TWD.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -1161,6 +1194,7 @@ int main()
 								if (CBG.GetPositionY() == Dtraverse)
 								{
 									CBG.~pion();
+									TWD.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -1177,6 +1211,7 @@ int main()
 								if (FBG.GetPositionY() == Dtraverse)
 								{
 									FBG.~pion();
+									TWD.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -1193,6 +1228,7 @@ int main()
 								if (RB.GetPositionY() == Dtraverse)
 								{
 									RB.~pion();
+									TWD.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -1209,6 +1245,7 @@ int main()
 								if (KB.GetPositionY() == Dtraverse)
 								{
 									KB.~pion();
+									TWD.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -1225,6 +1262,7 @@ int main()
 								if (FBD.GetPositionY() == Dtraverse)
 								{
 									FBD.~pion();
+									TWD.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -1241,6 +1279,7 @@ int main()
 								if (CBD.GetPositionY() == Dtraverse)
 								{
 									CBD.~pion();
+									TWD.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -1257,6 +1296,7 @@ int main()
 								if (TBD.GetPositionY() == Dtraverse)
 								{
 									TBD.~pion();
+									TWD.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -1273,6 +1313,7 @@ int main()
 								if (PBa.GetPositionY() == Dtraverse)
 								{
 									PBa.~pion();
+									TWD.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -1289,6 +1330,7 @@ int main()
 								if (PBb.GetPositionY() == Dtraverse)
 								{
 									PBb.~pion();
+									TWD.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -1305,6 +1347,7 @@ int main()
 								if (PBc.GetPositionY() == Dtraverse)
 								{
 									PBc.~pion();
+									TWD.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -1321,6 +1364,7 @@ int main()
 								if (PBd.GetPositionY() == Dtraverse)
 								{
 									PBd.~pion();
+									TWD.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -1337,6 +1381,7 @@ int main()
 								if (PBe.GetPositionY() == Dtraverse)
 								{
 									PBe.~pion();
+									TWD.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -1353,6 +1398,7 @@ int main()
 								if (PBf.GetPositionY() == Dtraverse)
 								{
 									PBf.~pion();
+									TWD.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -1369,6 +1415,7 @@ int main()
 								if (PBg.GetPositionY() == Dtraverse)
 								{
 									PBg.~pion();
+									TWD.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -1385,6 +1432,7 @@ int main()
 								if (PBh.GetPositionY() == Dtraverse)
 								{
 									PBh.~pion();
+									TWD.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -1531,6 +1579,7 @@ int main()
 								if (TBG.GetPositionX() == DIcolone)
 								{
 									TBG.~pion();
+									TWD.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -1547,6 +1596,7 @@ int main()
 								if (CBG.GetPositionX() == DIcolone)
 								{
 									CBG.~pion();
+									TWD.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -1563,6 +1613,7 @@ int main()
 								if (FBG.GetPositionX() == DIcolone)
 								{
 									FBG.~pion();
+									TWD.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -1579,6 +1630,7 @@ int main()
 								if (RB.GetPositionX() == DIcolone)
 								{
 									RB.~pion();
+									TWD.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -1595,6 +1647,7 @@ int main()
 								if (KB.GetPositionX() == DIcolone)
 								{
 									KB.~pion();
+									TWD.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -1611,6 +1664,7 @@ int main()
 								if (FBD.GetPositionX() == DIcolone)
 								{
 									FBD.~pion();
+									TWD.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -1627,6 +1681,7 @@ int main()
 								if (CBD.GetPositionX() == DIcolone)
 								{
 									CBD.~pion();
+									TWD.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -1643,6 +1698,7 @@ int main()
 								if (TBD.GetPositionX() == DIcolone)
 								{
 									TBD.~pion();
+									TWD.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -1659,6 +1715,7 @@ int main()
 								if (PBa.GetPositionX() == DIcolone)
 								{
 									PBa.~pion();
+									TWD.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -1675,6 +1732,7 @@ int main()
 								if (PBb.GetPositionX() == DIcolone)
 								{
 									PBb.~pion();
+									TWD.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -1691,6 +1749,7 @@ int main()
 								if (PBc.GetPositionX() == DIcolone)
 								{
 									PBc.~pion();
+									TWD.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -1707,6 +1766,7 @@ int main()
 								if (PBd.GetPositionX() == DIcolone)
 								{
 									PBd.~pion();
+									TWD.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -1723,6 +1783,7 @@ int main()
 								if (PBe.GetPositionX() == DIcolone)
 								{
 									PBe.~pion();
+									TWD.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -1739,6 +1800,7 @@ int main()
 								if (PBf.GetPositionX() == DIcolone)
 								{
 									PBf.~pion();
+									TWD.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -1755,6 +1817,7 @@ int main()
 								if (PBg.GetPositionX() == DIcolone)
 								{
 									PBg.~pion();
+									TWD.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -1771,6 +1834,7 @@ int main()
 								if (PBh.GetPositionX() == DIcolone)
 								{
 									PBh.~pion();
+									TWD.deplacement(DIcolone, Dtraverse);
 								}
 							}
 
@@ -1788,7 +1852,221 @@ int main()
 			{
 				if (CWG.GetPositionX() == Icolone and CWG.GetPositionY() == traverse)
 				{
-					std::cout << "cavalier g\n";
+					std::cout << "choisit une colone de destination\n";
+					std::cin >> DCcolone;
+
+					switch (DCcolone)
+
+					{
+					case 'a':
+						DIcolone = 1;
+						break;
+
+					case 'b':
+						DIcolone = 2;
+						break;
+
+					case 'c':
+						DIcolone = 3;
+						break;
+
+					case 'd':
+						DIcolone = 4;
+						break;
+
+					case 'e':
+						DIcolone = 5;
+						break;
+
+					case 'f':
+						DIcolone = 6;
+						break;
+
+					case 'g':
+						DIcolone = 7;
+						break;
+
+					case 'h':
+						DIcolone = 8;
+						break;
+					}
+
+					std::cout << "choisit une traverse de destination\n";
+					std::cin >> Dtraverse;
+#pragma region pionBlanc
+					if (TWG.GetPositionX() == DIcolone and TWG.GetPositionY() == Dtraverse)
+					{
+						std::cout << "il y a une piece a cette endroit\n";
+					}
+					
+					else if (FWG.GetPositionX() == DIcolone and FWG.GetPositionY() == Dtraverse)
+					{
+						std::cout << "il y a une piece a cette endroit\n";
+					}
+
+					else if (RW.GetPositionX() == DIcolone and RW.GetPositionY() == Dtraverse)
+					{
+						std::cout << "il y a une piece a cette endroit\n";
+					}
+
+					else if (KW.GetPositionX() == DIcolone and KW.GetPositionY() == Dtraverse)
+					{
+						std::cout << "il y a une piece a cette endroit\n";
+					}
+
+					else if (FWD.GetPositionX() == DIcolone and FWD.GetPositionY() == Dtraverse)
+					{
+						std::cout << "il y a une piece a cette endroit\n";
+					}
+
+					else if (CWD.GetPositionX() == DIcolone and CWD.GetPositionY() == Dtraverse)
+					{
+						std::cout << "il y a une piece a cette endroit\n";
+					}
+
+					else if (TWD.GetPositionX() == DIcolone and TWD.GetPositionY() == Dtraverse)
+					{
+						std::cout << "il y a une piece a cet endroit\n";
+					}
+
+					else if (PWa.GetPositionX() == DIcolone and PWa.GetPositionY() == Dtraverse)
+					{
+						std::cout << "il y a une piece a cet endropit\n";
+					}
+
+					else if (PWb.GetPositionX() == DIcolone and PWb.GetPositionY() == Dtraverse)
+					{
+						std::cout << "il y a une piece a cet endropit\n";
+					}
+
+
+					else if (PWc.GetPositionX() == DIcolone and PWc.GetPositionY() == Dtraverse)
+					{
+						std::cout << "il y a une piece a cet endropit\n";
+					}
+
+					else if (PWd.GetPositionX() == DIcolone and PWd.GetPositionY() == Dtraverse)
+					{
+						std::cout << "il y a une piece a cet endropit\n";
+					}
+
+					else if (PWe.GetPositionX() == DIcolone and PWe.GetPositionY() == Dtraverse)
+					{
+						std::cout << "il y a une piece a cet endropit\n";
+					}
+
+					else if (PWf.GetPositionX() == DIcolone and PWf.GetPositionY() == Dtraverse)
+					{
+						std::cout << "il y a une piece a cet endropit\n";
+					}
+
+					else if (PWg.GetPositionX() == DIcolone and PWg.GetPositionY() == Dtraverse)
+					{
+						std::cout << "il y a une piece a cet endropit\n";
+					}
+
+					else if (PWh.GetPositionX() == DIcolone and PWh.GetPositionY() == Dtraverse)
+					{
+						std::cout << "il y a une piece a cet endropit\n";
+					}
+#pragma endregion
+
+#pragma region pionNoir
+					if (TBG.GetPositionX() == DIcolone and TBG.GetPositionY() == Dtraverse)
+					{
+						TBG.~pion();
+						CWG.deplacement(Dtraverse, DIcolone);
+					}
+					else if (CBG.GetPositionX() == DIcolone and CBG.GetPositionY() == Dtraverse)
+					{
+						CBG.~pion();
+						CWG.deplacement(Dtraverse, DIcolone);
+					}
+					else if (FBG.GetPositionX() == DIcolone and FBG.GetPositionY() == Dtraverse)
+					{
+						FBG.~pion();
+						CWG.deplacement(Dtraverse, DIcolone);
+					}
+
+					else if (RB.GetPositionX() == DIcolone and RB.GetPositionY() == Dtraverse)
+					{
+						RB.~pion();
+						CWG.deplacement(Dtraverse, DIcolone);
+					}
+
+					else if (KB.GetPositionX() == DIcolone and KB.GetPositionY() == Dtraverse)
+					{
+						KB.~pion();
+						CWG.deplacement(Dtraverse, DIcolone);
+					}
+
+					else if (FBD.GetPositionX() == DIcolone and FBD.GetPositionY() == Dtraverse)
+					{
+						FBD.~pion();
+						CWG.deplacement(Dtraverse, DIcolone);
+					}
+
+					else if (CBD.GetPositionX() == DIcolone and CBD.GetPositionY() == Dtraverse)
+					{
+						CBD.~pion();
+						CWG.deplacement(Dtraverse, DIcolone);
+					}
+
+					else if (TBD.GetPositionX() == DIcolone and TBD.GetPositionY() == Dtraverse)
+					{
+						TBD.~pion();
+						CWG.deplacement(Dtraverse, DIcolone);
+					}
+
+					else if (PBa.GetPositionX() == DIcolone and PBa.GetPositionY() == Dtraverse)
+					{
+						PBa.~pion();
+						CWG.deplacement(Dtraverse, DIcolone);
+					}
+
+					else if (PBb.GetPositionX() == DIcolone and PBb.GetPositionY() == Dtraverse)
+					{
+						PBb.~pion();
+						CWG.deplacement(Dtraverse, DIcolone);
+					}
+
+					else if (PBc.GetPositionX() == DIcolone and PBc.GetPositionY() == Dtraverse)
+					{
+						PBc.~pion();
+						CWG.deplacement(Dtraverse, DIcolone);
+					}
+
+					else if (PBd.GetPositionX() == DIcolone and PBd.GetPositionY() == Dtraverse)
+					{
+						PBd.~pion();
+						CWG.deplacement(Dtraverse, DIcolone);
+					}
+
+					else if (PBe.GetPositionX() == DIcolone and PBe.GetPositionY() == Dtraverse)
+					{
+						PBe.~pion();
+						CWG.deplacement(Dtraverse, DIcolone);
+					}
+
+					else if (PBf.GetPositionX() == DIcolone and PBf.GetPositionY() == Dtraverse)
+					{
+						PBf.~pion();
+						CWG.deplacement(Dtraverse, DIcolone);
+					}
+
+					else if (PBg.GetPositionX() == DIcolone and PBg.GetPositionY() == Dtraverse)
+					{
+						PBg.~pion();
+						CWG.deplacement(Dtraverse, DIcolone);
+					}
+
+					else if (PBh.GetPositionX() == DIcolone and PBh.GetPositionY() == Dtraverse)
+					{
+						PBh.~pion();
+						CWG.deplacement(Dtraverse, DIcolone);
+					}
+#pragma endregion
+
 				}
 
 				else if (CWD.GetPositionX() == Icolone and CWD.GetPositionY() == traverse)
