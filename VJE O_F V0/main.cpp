@@ -89,13 +89,16 @@ int main()
 	int rock;
 
 	char DCcolone; //colone de destination
-	int DIcolone; //colone de destination
+	int DIcolone = 0; //colone de destination
 	int Dtraverse; //traverse de destination
+
+	    bool white = true;
+		bool black = false;
 #pragma endregion
 
 	while (true)
 	{
-		/*les blancs jouent*/ while (TWG.GetPositionX() == TWG.GetPositionX() or TWG.GetPositionY() == TWG.GetPositionY() or CWG.GetPositionX() == CWG.GetPositionX() or CWG.GetPositionY() == CWG.GetPositionY() or FWG.GetPositionX() == FWG.GetPositionX() or FWG.GetPositionY() == FWG.GetPositionY() or RW.GetPositionX() == RW.GetPositionX() or RW.GetPositionY() == RW.GetPositionY() or KW.GetPositionX() == KW.GetPositionX() or KW.GetPositionY() == KW.GetPositionY() or FWD.GetPositionX() == FWD.GetPositionX() or FWD.GetPositionY() == FWD.GetPositionY() or CWD.GetPositionX() == CWD.GetPositionX() or CWD.GetPositionY() == CWD.GetPositionY() or TWD.GetPositionX() == TWD.GetPositionX() or TWD.GetPositionY() == TWD.GetPositionY() or PWa.GetPositionY() == PWa.GetPositionY() or PWb.GetPositionY() == PWb.GetPositionY() or PWc.GetPositionY() == PWc.GetPositionY() or PWd.GetPositionY() == PWd.GetPositionY() or PWe.GetPositionY() == PWe.GetPositionY() or PWf.GetPositionY() == PWf.GetPositionY() or PWg.GetPositionY() == PWg.GetPositionY() or PWh.GetPositionY() == PWh.GetPositionY())
+		/*les blancs jouent*/ while (white == true)
 		{
 			std::cout << "choisis une piece a jouer avec sa lettre (premiere lettre en francais apart pour le rois) pour faire le rock tu deveras choisir le rois donc dans ce cas si la lettre k \n";
 			std::cin >> piece;
@@ -328,6 +331,8 @@ int main()
 								{
 									TBG.~pion();
 									TWG.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -345,6 +350,8 @@ int main()
 								{
 									CBG.~pion();
 									TWG.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -362,6 +369,8 @@ int main()
 								{
 									FBG.~pion();
 									TWG.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -379,6 +388,8 @@ int main()
 								{
 									RB.~pion();
 									TWG.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -396,6 +407,8 @@ int main()
 								{
 									KB.~pion();
 									TWG.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -413,6 +426,8 @@ int main()
 								{
 									FBD.~pion();
 									TWG.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -430,6 +445,8 @@ int main()
 								{
 									CBD.~pion();
 									TWG.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -447,6 +464,8 @@ int main()
 								{
 									TBD.~pion();
 									TWG.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -464,6 +483,8 @@ int main()
 								{
 									PBa.~pion();
 									TWG.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -481,6 +502,8 @@ int main()
 								{
 									PBb.~pion();
 									TWG.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -498,6 +521,8 @@ int main()
 								{
 									PBc.~pion();
 									TWG.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -515,6 +540,8 @@ int main()
 								{
 									PBd.~pion();
 									TWG.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -532,6 +559,8 @@ int main()
 								{
 									PBe.~pion();
 									TWG.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -549,6 +578,8 @@ int main()
 								{
 									PBf.~pion();
 									TWG.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -566,6 +597,8 @@ int main()
 								{
 									PBg.~pion();
 									TWG.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -583,11 +616,17 @@ int main()
 								{
 									PBh.~pion();
 									TWG.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
 							else
+							{
 								TWG.deplacement(DIcolone, Dtraverse);
+								white = false;
+								black = true;
+							}
 						}
 					}
 
@@ -730,6 +769,8 @@ int main()
 								{
 									TBG.~pion();
 									TWG.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -747,6 +788,8 @@ int main()
 								{
 									CBG.~pion();
 									TWG.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -764,6 +807,8 @@ int main()
 								{
 									FBG.~pion();
 									TWG.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -781,6 +826,8 @@ int main()
 								{
 									RB.~pion();
 									TWG.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -798,6 +845,8 @@ int main()
 								{
 									KB.~pion();
 									TWG.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -815,6 +864,8 @@ int main()
 								{
 									FBD.~pion();
 									TWG.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -832,6 +883,8 @@ int main()
 								{
 									CBD.~pion();
 									TWG.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -849,6 +902,8 @@ int main()
 								{
 									TBD.~pion();
 									TWG.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -866,6 +921,8 @@ int main()
 								{
 									PBa.~pion();
 									TWG.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -883,6 +940,8 @@ int main()
 								{
 									PBb.~pion();
 									TWG.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -900,6 +959,8 @@ int main()
 								{
 									PBc.~pion();
 									TWG.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -917,6 +978,8 @@ int main()
 								{
 									PBd.~pion();
 									TWG.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -934,6 +997,8 @@ int main()
 								{
 									PBe.~pion();
 									TWG.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -951,6 +1016,8 @@ int main()
 								{
 									PBf.~pion();
 									TWG.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -968,6 +1035,8 @@ int main()
 								{
 									PBg.~pion();
 									TWG.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -985,11 +1054,17 @@ int main()
 								{
 									PBh.~pion();
 									TWG.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
 							else
+							{
 								TWG.deplacement(DIcolone, Dtraverse);
+								white = false;
+								black = true;
+							}
 						}
 					}
 				} 
@@ -1178,6 +1253,8 @@ int main()
 								{
 									TBG.~pion();
 									TWD.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -1195,6 +1272,8 @@ int main()
 								{
 									CBG.~pion();
 									TWD.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -1212,6 +1291,8 @@ int main()
 								{
 									FBG.~pion();
 									TWD.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -1229,6 +1310,8 @@ int main()
 								{
 									RB.~pion();
 									TWD.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -1246,6 +1329,8 @@ int main()
 								{
 									KB.~pion();
 									TWD.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -1263,6 +1348,8 @@ int main()
 								{
 									FBD.~pion();
 									TWD.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -1280,6 +1367,8 @@ int main()
 								{
 									CBD.~pion();
 									TWD.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -1297,6 +1386,8 @@ int main()
 								{
 									TBD.~pion();
 									TWD.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -1314,6 +1405,8 @@ int main()
 								{
 									PBa.~pion();
 									TWD.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -1331,6 +1424,8 @@ int main()
 								{
 									PBb.~pion();
 									TWD.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -1348,6 +1443,8 @@ int main()
 								{
 									PBc.~pion();
 									TWD.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -1365,6 +1462,8 @@ int main()
 								{
 									PBd.~pion();
 									TWD.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -1382,6 +1481,8 @@ int main()
 								{
 									PBe.~pion();
 									TWD.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -1399,6 +1500,8 @@ int main()
 								{
 									PBf.~pion();
 									TWD.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -1416,6 +1519,8 @@ int main()
 								{
 									PBg.~pion();
 									TWD.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -1433,11 +1538,17 @@ int main()
 								{
 									PBh.~pion();
 									TWD.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
 							else
+							{
 								TWD.deplacement(DIcolone, Dtraverse);
+								white = false;
+								black = true;
+							}
 						}
 					}
 
@@ -1580,6 +1691,8 @@ int main()
 								{
 									TBG.~pion();
 									TWD.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -1597,6 +1710,8 @@ int main()
 								{
 									CBG.~pion();
 									TWD.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -1614,6 +1729,8 @@ int main()
 								{
 									FBG.~pion();
 									TWD.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -1631,6 +1748,8 @@ int main()
 								{
 									RB.~pion();
 									TWD.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -1648,6 +1767,8 @@ int main()
 								{
 									KB.~pion();
 									TWD.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -1665,6 +1786,8 @@ int main()
 								{
 									FBD.~pion();
 									TWD.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -1682,6 +1805,8 @@ int main()
 								{
 									CBD.~pion();
 									TWD.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -1699,6 +1824,8 @@ int main()
 								{
 									TBD.~pion();
 									TWD.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -1716,6 +1843,8 @@ int main()
 								{
 									PBa.~pion();
 									TWD.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -1733,6 +1862,8 @@ int main()
 								{
 									PBb.~pion();
 									TWD.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -1750,6 +1881,8 @@ int main()
 								{
 									PBc.~pion();
 									TWD.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -1767,6 +1900,8 @@ int main()
 								{
 									PBd.~pion();
 									TWD.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -1784,6 +1919,8 @@ int main()
 								{
 									PBe.~pion();
 									TWD.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -1801,6 +1938,8 @@ int main()
 								{
 									PBf.~pion();
 									TWD.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -1818,6 +1957,8 @@ int main()
 								{
 									PBg.~pion();
 									TWD.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
@@ -1835,11 +1976,17 @@ int main()
 								{
 									PBh.~pion();
 									TWD.deplacement(DIcolone, Dtraverse);
+									white = false;
+									black = true;
 								}
 							}
 
 							else
+							{
 								TWD.deplacement(DIcolone, Dtraverse);
+								white = false;
+								black = true;
+							}
 						}
 					}
 				}
@@ -1976,97 +2123,135 @@ int main()
 					{
 						TBG.~pion();
 						CWG.deplacement(Dtraverse, DIcolone);
+						white = false;
+						black = true;
 					}
 					else if (CBG.GetPositionX() == DIcolone and CBG.GetPositionY() == Dtraverse)
 					{
 						CBG.~pion();
 						CWG.deplacement(Dtraverse, DIcolone);
+						white = false;
+						black = true;
 					}
 					else if (FBG.GetPositionX() == DIcolone and FBG.GetPositionY() == Dtraverse)
 					{
 						FBG.~pion();
 						CWG.deplacement(Dtraverse, DIcolone);
+						white = false;
+						black = true;
 					}
 
 					else if (RB.GetPositionX() == DIcolone and RB.GetPositionY() == Dtraverse)
 					{
 						RB.~pion();
 						CWG.deplacement(Dtraverse, DIcolone);
+						white = false;
+						black = true;
 					}
 
 					else if (KB.GetPositionX() == DIcolone and KB.GetPositionY() == Dtraverse)
 					{
 						KB.~pion();
 						CWG.deplacement(Dtraverse, DIcolone);
+						white = false;
+						black = true;
 					}
 
 					else if (FBD.GetPositionX() == DIcolone and FBD.GetPositionY() == Dtraverse)
 					{
 						FBD.~pion();
 						CWG.deplacement(Dtraverse, DIcolone);
+						white = false;
+						black = true;
 					}
 
 					else if (CBD.GetPositionX() == DIcolone and CBD.GetPositionY() == Dtraverse)
 					{
 						CBD.~pion();
 						CWG.deplacement(Dtraverse, DIcolone);
+						white = false;
+						black = true;
 					}
 
 					else if (TBD.GetPositionX() == DIcolone and TBD.GetPositionY() == Dtraverse)
 					{
 						TBD.~pion();
 						CWG.deplacement(Dtraverse, DIcolone);
+						white = false;
+						black = true;
 					}
 
 					else if (PBa.GetPositionX() == DIcolone and PBa.GetPositionY() == Dtraverse)
 					{
 						PBa.~pion();
 						CWG.deplacement(Dtraverse, DIcolone);
+						white = false;
+						black = true;
 					}
 
 					else if (PBb.GetPositionX() == DIcolone and PBb.GetPositionY() == Dtraverse)
 					{
 						PBb.~pion();
 						CWG.deplacement(Dtraverse, DIcolone);
+						white = false;
+						black = true;
 					}
 
 					else if (PBc.GetPositionX() == DIcolone and PBc.GetPositionY() == Dtraverse)
 					{
 						PBc.~pion();
 						CWG.deplacement(Dtraverse, DIcolone);
+						white = false;
+						black = true;
 					}
 
 					else if (PBd.GetPositionX() == DIcolone and PBd.GetPositionY() == Dtraverse)
 					{
 						PBd.~pion();
 						CWG.deplacement(Dtraverse, DIcolone);
+						white = false;
+						black = true;
 					}
 
 					else if (PBe.GetPositionX() == DIcolone and PBe.GetPositionY() == Dtraverse)
 					{
 						PBe.~pion();
 						CWG.deplacement(Dtraverse, DIcolone);
+						white = false;
+						black = true;
 					}
 
 					else if (PBf.GetPositionX() == DIcolone and PBf.GetPositionY() == Dtraverse)
 					{
 						PBf.~pion();
 						CWG.deplacement(Dtraverse, DIcolone);
+						white = false;
+						black = true;
 					}
 
 					else if (PBg.GetPositionX() == DIcolone and PBg.GetPositionY() == Dtraverse)
 					{
 						PBg.~pion();
 						CWG.deplacement(Dtraverse, DIcolone);
+						white = false;
+						black = true;
 					}
 
 					else if (PBh.GetPositionX() == DIcolone and PBh.GetPositionY() == Dtraverse)
 					{
 						PBh.~pion();
 						CWG.deplacement(Dtraverse, DIcolone);
+						white = false;
+						black = true;
 					}
 #pragma endregion
 
+					else
+					{
+					 CWG.deplacement(Dtraverse, DIcolone);
+					 white = false;
+					 black = true;
+					}
 				}
 
 				else if (CWD.GetPositionX() == Icolone and CWD.GetPositionY() == traverse)
@@ -2164,169 +2349,7 @@ int main()
 			
 		}
 
-		/*les noirs jouent*/ while (TBG.GetPositionX() == TBG.GetPositionX() or TBG.GetPositionY() == TBG.GetPositionY() or CBG.GetPositionX() == CBG.GetPositionX() or CBG.GetPositionY() == CBG.GetPositionY() or FBG.GetPositionX() == FBG.GetPositionX() or FBG.GetPositionY() == FBG.GetPositionY() or RB.GetPositionX() == RB.GetPositionX() or RB.GetPositionY() == RB.GetPositionY() or KB.GetPositionX() == KB.GetPositionX() or KB.GetPositionY() == KB.GetPositionY() or FBD.GetPositionX() == FBD.GetPositionX() or FBD.GetPositionY() == FBD.GetPositionY() or CBD.GetPositionX() == CBD.GetPositionX() or CBD.GetPositionY() == CBD.GetPositionY() or TBD.GetPositionX() == TBD.GetPositionX() or TBD.GetPositionY() == TBD.GetPositionY() or PBa.GetPositionY() == PBa.GetPositionY() or PBb.GetPositionY() == PBb.GetPositionY() or PBc.GetPositionY() == PBc.GetPositionY() or PBd.GetPositionY() == PBd.GetPositionY() or PBe.GetPositionY() == PBe.GetPositionY() or PBf.GetPositionY() == PBf.GetPositionY() or PBg.GetPositionY() == PBg.GetPositionY() or PBh.GetPositionY() == PBh.GetPositionY())
+		/*les noirs jouent*/ while (black == true)
 		{
-			std::cout << "choisis une piece a jouer avec sa lettre (premiere lettre en francais apart pour le rois) pour faire le rock tu deveras choisir le rois donc dans ce cas si la lettre k \n";
-			std::cin >> piece;
-
-			std::cout << "choisis la colone de la piece (en minuscule)\n";
-			std::cin >> Ccolone;
-
-			std::cout << "choisis la traverse de la piece\n";
-			std::cin >> traverse;
-
-			switch (Ccolone)
-
-			{
-			case 'a':
-				Icolone = 1;
-				break;
-
-			case 'b':
-				Icolone = 2;
-				break;
-
-			case 'c':
-				Icolone = 3;
-				break;
-
-			case 'd':
-				Icolone = 4;
-				break;
-
-			case 'e':
-				Icolone = 5;
-				break;
-
-			case 'f':
-				Icolone = 6;
-				break;
-
-			case 'g':
-				Icolone = 7;
-				break;
-
-			case 'h':
-				Icolone = 8;
-				break;
-			}
-
-			if (piece == 't')
-			{
-				if (TBG.GetPositionX() == Icolone and TBG.GetPositionY() == traverse)
-				{
-					std::cout << "tour g\n";
-				}
-
-				else if (TBD.GetPositionX() == Icolone and TBD.GetPositionY() == traverse)
-				{
-					std::cout << "tour d\n";
-				}
-
-				else
-					std::cout << "'il n y a pas cette piece a cet endroit\n";
-			}
-
-			if (piece == 'c')
-			{
-				if (CBG.GetPositionX() == Icolone and CBG.GetPositionY() == traverse)
-				{
-					std::cout << "cavalier g\n";
-				}
-
-				else if (CBD.GetPositionX() == Icolone and CBD.GetPositionY() == traverse)
-				{
-					std::cout << "cavalier d\n";
-				}
-
-				else
-					std::cout << "'il n y a pas cette piece a cet endroit\n";
-			}
-
-			if (piece == 'f')
-			{
-				if (FBG.GetPositionX() == Icolone and FBG.GetPositionY() == traverse)
-				{
-					std::cout << "fou g\n";
-				}
-
-				else if (FBD.GetPositionX() == Icolone and FBD.GetPositionY() == traverse)
-				{
-					std::cout << "fou d\n";
-				}
-
-				else
-					std::cout << "'il n y a pas cette piece a cet endroit\n";
-			}
-
-			if (piece == 'r')
-			{
-				if (RB.GetPositionX() == Icolone and RB.GetPositionY() == traverse)
-				{
-					std::cout << "reine\n";
-				}
-
-				else
-					std::cout << "'il n y a pas cette piece a cet endroit\n";
-			}
-
-			if (piece == 'k')
-			{
-				if (KB.GetPositionX() == Icolone and KB.GetPositionY() == traverse)
-				{
-					std::cout << "roi\n";
-				}
-
-				else
-					std::cout << "'il n y a pas cette piece qui gene le passage\n";
-			}
-
-			if (piece == 'p')
-			{
-				if (PBa.GetPositionX() == Icolone and PWa.GetPositionY() == traverse)
-				{
-					std::cout << "pion a\n";
-				}
-
-				else if (PBb.GetPositionX() == Icolone and PWb.GetPositionY() == traverse)
-				{
-					std::cout << "pion b\n";
-				}
-
-				else if (PBc.GetPositionX() == Icolone and PWc.GetPositionY() == traverse)
-				{
-					std::cout << "pion c\n";
-				}
-
-				else if (PBd.GetPositionX() == Icolone and PWd.GetPositionY() == traverse)
-				{
-					std::cout << "pion d\n";
-				}
-
-				else if (PBe.GetPositionX() == Icolone and PWe.GetPositionY() == traverse)
-				{
-					std::cout << "pion e\n";
-				}
-
-				else if (PBf.GetPositionX() == Icolone and PWf.GetPositionY() == traverse)
-				{
-					std::cout << "pion f\n";
-				}
-
-				else if (PBg.GetPositionX() == Icolone and PWg.GetPositionY() == traverse)
-				{
-					std::cout << "pion g\n";
-				}
-
-				else if (PBh.GetPositionX() == Icolone and PWh.GetPositionY() == traverse)
-				{
-					std::cout << "pion h\n";
-				}
-
-				else
-					std::cout << "'il n y a pas cette piece a cet endroit\n";
-			}
-
 		}
-	}
 	}
