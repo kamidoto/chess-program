@@ -1,6 +1,8 @@
 #include "pion.h"
 #include <iostream>
 
+bool possible(true);
+
 int main()
 {
 	char S = '\xA0';//espace
@@ -4513,7 +4515,141 @@ int main()
 			{
 				if (KW.GetPositionX() == Icolone and KW.GetPositionY() == traverse)
 				{
-					std::cout << "roi\n";
+#pragma region deplacement
+					std::cout << "choisit une colone de destination\n";
+					std::cin >> DCcolone;
+
+					switch (DCcolone)
+
+					{
+					case 'a':
+						DIcolone = 1;
+						break;
+
+					case 'b':
+						DIcolone = 2;
+						break;
+
+					case 'c':
+						DIcolone = 3;
+						break;
+
+					case 'd':
+						DIcolone = 4;
+						break;
+
+					case 'e':
+						DIcolone = 5;
+						break;
+
+					case 'f':
+						DIcolone = 6;
+						break;
+
+					case 'g':
+						DIcolone = 7;
+						break;
+
+					case 'h':
+						DIcolone = 8;
+						break;
+					}
+
+					std::cout << "choisit une traverse de destination\n";
+					std::cin >> Dtraverse;
+
+#pragma region safe case
+
+#pragma region fou
+					if (FBG.fouTrajectoire(TBG.GetPositionX(), TBG.GetPositionY()))
+					{
+						if (FBG.fouTrajectoire(DIcolone, Dtraverse))
+						{
+							if (FBG.rangeBeetweenPiece(KW, TBG) == 1)
+							{
+								possible == true;
+							}
+
+							else
+								possible == false;
+						}
+
+						else possible == true;
+					}
+
+				/*
+				faire ca ac tt les autres pieces et a la fin inclure un truc comme ça:
+
+				else
+					{
+						if (FBG.fouTrajectoire(DIcolone, Dtraverse) == 1)
+						{
+							std::cout << "deplacement pas possible\n";
+							possible == false;
+						}
+
+						else if (FBD.fouTrajectoire(DIcolone, Dtraverse) == 1)
+						{
+							std::cout << "deplacement pas possible\n";
+
+							possible == false;
+						}
+					}
+				*/
+
+#pragma endregion
+
+#pragma region tour
+#pragma endregion
+
+#pragma endregion
+				if (possible == true)
+				{
+					if (DIcolone == KW.GetPositionX() + 1 and Dtraverse == KW.GetPositionY() + 1)
+					{
+
+					}
+
+					else if (DIcolone == KW.GetPositionX() - 1 and Dtraverse == KW.GetPositionY() - 1)
+					{
+
+					}
+
+					else if (DIcolone == KW.GetPositionX() + 1 and Dtraverse == KW.GetPositionY() - 1)
+					{
+
+					}
+
+					else if (DIcolone == KW.GetPositionX() - 1 and Dtraverse == KW.GetPositionY() + 1)
+					{
+
+					}
+
+					if (DIcolone == KW.GetPositionX() + 1 and Dtraverse == KW.GetPositionY())
+					{
+
+					}
+
+					else if (DIcolone == KW.GetPositionX() - 1 and Dtraverse == KW.GetPositionY())
+					{
+
+					}
+
+					else if (DIcolone == KW.GetPositionX() and Dtraverse == KW.GetPositionY() - 1)
+					{
+
+					}
+
+					else if (DIcolone == KW.GetPositionX() and Dtraverse == KW.GetPositionY() + 1)
+					{
+
+					}
+
+					else
+						std::cout << "deplacement invalide\n";
+				}
+#pragma endregion
+
 				}
 
 				else

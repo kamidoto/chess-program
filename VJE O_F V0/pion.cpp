@@ -224,6 +224,102 @@ int pion::deplacement(int CaseY , int CaseX )
 	return positionX, positionY;
 }
 
+int pion::fouTrajectoire(int x, int y)
+{
+	if (Ptype == 'f')
+	{
+		int deltaX, deltaY;
+
+		deltaX = x - positionX;
+		deltaY = y - positionY;
+
+		if (deltaY / deltaX == 1 or deltaY / deltaX == -1)
+		{
+			return 1;
+		}
+		else
+		{
+			return 0;
+		}
+	}
+	else
+	{
+		std::cout << "pas possible\n";
+		return 0;
+	}
+}
+
+int pion::rangeBeetweenPiece(pion piece1, pion piece2)
+{
+	if (Ptype == 'f')
+	{
+	 int DistancePiece1 = piece1.GetPositionY() - pion::GetPositionY();
+	 int DistancePiece2 = piece2.GetPositionY() - pion::GetPositionY();
+
+	 if (DistancePiece1 > 0 and DistancePiece2 > 0)
+	 {
+		 if (DistancePiece1 < DistancePiece2)
+		 {
+			 return 1;
+		 }
+
+		 else
+		 {
+			 return 2;
+		 }
+	 }
+
+	 else if (DistancePiece1 < 0 and DistancePiece2 < 0)
+	 {
+		 if (DistancePiece1 > DistancePiece2)
+		 {
+			 return 1;
+		 }
+
+		 else
+		 {
+			 return 2;
+		 }
+	 }
+
+	}
+} // pas finis
+
+int pion::rangeBeetwwenPiece(pion piece1, int coordoneX, int coordoneY)
+{
+	if (Ptype == 'f')
+	{
+		int DistancePiece1 = piece1.GetPositionY() - pion::GetPositionY();
+		int DistancePiece2 = coordoneY - pion::GetPositionY();
+
+		if (DistancePiece1 > 0 and DistancePiece2 > 0)
+		{
+			if (DistancePiece1 < DistancePiece2)
+			{
+				return 1;
+			}
+
+			else
+			{
+				return 2;
+			}
+		}
+
+		else if (DistancePiece1 < 0 and DistancePiece2 < 0)
+		{
+			if (DistancePiece1 > DistancePiece2)
+			{
+				return 1;
+			}
+
+			else
+			{
+				return 2;
+			}
+		}
+	}
+} // pas finis
+
 pion::~pion()
 {
 
