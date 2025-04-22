@@ -4577,6 +4577,89 @@ int main()
 						else possible == true;
 					}
 
+					else if (FBG.fouTrajectoire(CBG.GetPositionX(), CBG.GetPositionY()))
+					{
+						if (FBG.fouTrajectoire(DIcolone, Dtraverse))
+						{
+							if (FBG.rangeBeetweenPiece(KW, CBG) == 1)
+							{
+								possible == true;
+							}
+
+							else
+								possible == false;
+						}
+
+						else possible == true;
+					}
+
+
+					else if (FBG.fouTrajectoire(RB.GetPositionX(), RB.GetPositionY()))
+					{
+						if (FBG.fouTrajectoire(DIcolone, Dtraverse))
+						{
+							if (FBG.rangeBeetweenPiece(KW, RB) == 1)
+							{
+								possible == true;
+							}
+
+							else
+								possible == false;
+						}
+
+						else possible == true;
+					}
+
+
+					else if (FBG.fouTrajectoire(KB.GetPositionX(), KB.GetPositionY()))
+					{
+						if (FBG.fouTrajectoire(DIcolone, Dtraverse))
+						{
+							if (FBG.rangeBeetweenPiece(KW, KB) == 1)
+							{
+								possible == true;
+							}
+
+							else
+								possible == false;
+						}
+
+						else possible == true;
+					}
+
+
+					else if (FBG.fouTrajectoire(CBD.GetPositionX(), CBD.GetPositionY()))
+					{
+						if (FBG.fouTrajectoire(DIcolone, Dtraverse))
+						{
+							if (FBG.rangeBeetweenPiece(KW, CBD) == 1)
+							{
+								possible == true;
+							}
+
+							else
+								possible == false;
+						}
+
+						else possible == true;
+					}
+
+
+					else if (FBG.fouTrajectoire(TBD.GetPositionX(), TBD.GetPositionY()))
+					{
+						if (FBG.fouTrajectoire(DIcolone, Dtraverse))
+						{
+							if (FBG.rangeBeetweenPiece(KW, TBD) == 1)
+							{
+								possible == true;
+							}
+
+							else
+								possible == false;
+						}
+
+						else possible == true;
+					}
 				/*
 				faire ca ac tt les autres pieces et a la fin inclure un truc comme ça:
 
